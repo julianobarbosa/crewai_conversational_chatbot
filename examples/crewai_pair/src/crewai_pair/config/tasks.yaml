@@ -1,0 +1,16 @@
+code_writer_task:
+  description: >
+    Write the code to solve the given problem in the {language} programming language. Problem: {problem}
+
+  expected_output: >
+    Well formatted code to solve the problem. Include type hinting
+
+  agent: code_writer_agent
+code_reviewer_task:
+  description: "A software engineer has written this code for the given problem  in the {language} programming language.' Review the code critically and  make any changes to the code if necessary. \n"
+  problem: >
+    {problem}
+
+  expected_output: >
+    Well formatted code after the review
+
