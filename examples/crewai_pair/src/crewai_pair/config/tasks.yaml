@@ -1,16 +1,192 @@
 code_writer_task:
   description: >
-    Write the code to solve the given problem in the {language} programming language. Problem: {problem}
+    Escreva o código para resolver o problema dado na linguagem de programação {language}. Problema: {problem}
 
   expected_output: >
-    Well formatted code to solve the problem. Include type hinting
+    Código bem formatado para resolver o problema. Incluir dicas de tipo
 
   agent: code_writer_agent
 code_reviewer_task:
-  description: "A software engineer has written this code for the given problem  in the {language} programming language.' Review the code critically and  make any changes to the code if necessary. \n"
-  problem: >
-    {problem}
+  description: >
+    Um engenheiro de software escreveu este código para o problema fornecido na linguagem de programação {language}.' Revise o código criticamente e faça quaisquer alterações no código, se necessário. \n problema: {problem}
 
   expected_output: >
-    Well formatted code after the review
+    Código bem formatado após a revisão
 
+  agent: code_reviewer_agent
+coder_python_task:
+  description: >
+    Escreva o código para resolver o problema dado na linguagem de programação Python. Problema: {problem}
+
+  expected_output: >
+    Código bem formatado para resolver o problema. Incluir dicas de tipo
+
+  agent: coder_python_agent
+coder_qa_task:
+  description: >
+    Um engenheiro de software escreveu este código para o problema fornecido na linguagem de programação Python.' Revise o código criticamente e faça quaisquer alterações no código, se necessário. \n problema: {problem}
+
+  expected_output: >
+    Código bem formatado após a revisão
+
+  agent: coder_qa_agent
+coder_debuger_task:
+  description: >
+    Um engenheiro de software escreveu este código para o problema fornecido na linguagem de programação Python.' Revise o código criticamente e faça quaisquer alterações no código, se necessário. \n problema: {problem}
+
+  expected_output: >
+    Código bem formatado após a revisão
+
+  agent: coder_debuger_agent
+coder_tester_task:
+  description: >
+    Um engenheiro de software escreveu este código para o problema fornecido na linguagem de programação Python.' Revise o código criticamente e faça quaisquer alterações no código, se necessário. \n problema: {problem}
+
+  expected_output: >
+    Código bem formatado após a revisão
+
+  agent: coder_tester_agent
+coder_optimizer_task:
+  description: >
+    Um engenheiro de software escreveu este código para o problema fornecido na linguagem de programação Python.' Revise o código criticamente e faça quaisquer alterações no código, se necessário. \n problema: {problem}
+
+  expected_output: >
+    Código bem formatado após a revisão
+
+  agent: coder_optimizer_agent
+coder_scalability_task:
+  description: >
+    Um engenheiro de software escreveu este código para o problema fornecido na linguagem de programação Python.' Revise o código criticamente e faça quaisquer alterações no código, se necessário. \n problema: {problem}
+
+  expected_output: >
+    Código bem formatado após a revisão
+
+  agent: coder_scalability_agent
+coder_doc_task:
+  description: >
+    Um engenheiro de software escreveu este código para o problema fornecido na linguagem de programação Python.' Revise o código criticamente e faça quaisquer alterações no código, se necessário. \n problema: {problem}
+
+  expected_output: >
+    Código bem formatado após a revisão
+
+  agent: coder_doc_agent
+coder_reviewer_task:
+  description: >
+    Um engenheiro de software escreveu este código para o problema fornecido na linguagem de programação Python.' Revise o código criticamente e faça quaisquer alterações no código, se necessário. \n problema: {problem}
+
+  expected_output: >
+    Código bem formatado após a revisão
+
+  agent: coder_reviewer_agent
+coder_devops_task:
+  description: >
+    Um engenheiro de software escreveu este código para o problema fornecido na linguagem de programação Python.' Revise o código criticamente e faça quaisquer alterações no código, se necessário. \n problema: {problem}
+
+  expected_output: >
+    Código bem formatado após a revisão
+
+  agent: coder_devops_agent
+coder_frontend_task:
+  description: >
+    Um engenheiro de software escreveu este código para o problema fornecido na linguagem de programação Python.' Revise o código criticamente e faça quaisquer alterações no código, se necessário. \n problema: {problem}
+
+  expected_output: >
+    Código bem formatado após a revisão
+
+  agent: coder_frontend_agent
+coder_backend_task:
+  description: >
+    Um engenheiro de software escreveu este código para o problema fornecido na linguagem de programação Python.' Revise o código criticamente e faça quaisquer alterações no código, se necessário. \n problema: {problem}
+
+  expected_output: >
+    Código bem formatado após a revisão
+
+  agent: coder_backend_agent
+coder_data_task:
+  description: >
+    Um engenheiro de software escreveu este código para o problema fornecido na linguagem de programação Python.' Revise o código criticamente e faça quaisquer alterações no código, se necessário. \n problema: {problem}
+
+  expected_output: >
+    Código bem formatado após a revisão
+
+  agent: coder_data_agent
+coder_mobile_task:
+  description: >
+    Um engenheiro de software escreveu este código para o problema fornecido na linguagem de programação Python.' Revise o código criticamente e faça quaisquer alterações no código, se necessário. \n problema: {problem}
+
+  expected_output: >
+    Código bem formatado após a revisão
+
+  agent: coder_mobile_agent
+coder_cloud_task:
+  description: >
+    Um engenheiro de software escreveu este código para o problema fornecido na linguagem de programação Python.' Revise o código criticamente e faça quaisquer alterações no código, se necessário. \n problema: {problem}
+
+  expected_output: >
+    Código bem formatado após a revisão
+
+  agent: coder_cloud_agent
+coder_security_task:
+  description: >
+    Um engenheiro de software escreveu este código para o problema fornecido na linguagem de programação Python.' Revise o código criticamente e faça quaisquer alterações no código, se necessário. \n problema: {problem}
+
+  expected_output: >
+    Código bem formatado após a revisão
+
+  agent: coder_security_agent
+coder_ai_task:
+  description: >
+    Um engenheiro de software escreveu este código para o problema fornecido na linguagem de programação Python.' Revise o código criticamente e faça quaisquer alterações no código, se necessário. \n problema: {problem}
+
+  expected_output: >
+    Código bem formatado após a revisão
+
+  agent: coder_ai_agent
+project_manager_task:
+  description: >
+    Um engenheiro de software escreveu este código para o problema fornecido na linguagem de programação Python.' Revise o código criticamente e faça quaisquer alterações no código, se necessário. \n problema: {problem}
+
+  expected_output: >
+    Código bem formatado após a revisão
+
+  agent: project_manager_agent
+coder_manager_task:
+  description: >
+    Um engenheiro de software escreveu este código para o problema fornecido na linguagem de programação Python.' Revise o código criticamente e faça quaisquer alterações no código, se necessário. \n problema: {problem}
+
+  expected_output: >
+    Código bem formatado após a revisão
+
+  agent: coder_manager_agent
+coder_analyst_task:
+  description: >
+    Um engenheiro de software escreveu este código para o problema fornecido na linguagem de programação Python.' Revise o código criticamente e faça quaisquer alterações no código, se necessário. \n problema: {problem}
+
+  expected_output: >
+    Código bem formatado após a revisão
+
+  agent: coder_analyst_agent
+coder_architect_task:
+  description: >
+    Um engenheiro de software escreveu este código para o problema fornecido na linguagem de programação Python.' Revise o código criticamente e faça quaisquer alterações no código, se necessário. \n problema: {problem}
+
+  expected_output: >
+    Código bem formatado após a revisão
+
+  agent: coder_architect_agent
+coder_team_lead_task:
+  description: >
+    Um engenheiro de software escreveu este código para o problema fornecido na linguagem de programação Python.' Revise o código criticamente e faça quaisquer alterações no código, se necessário. \n problema: {problem}
+
+  expected_output: >
+    Código bem formatado após a revisão
+
+  agent: coder_team_lead_agent
+coder_fullstack_task:
+  description: >
+    Um engenheiro de software escreveu este código para o problema fornecido na linguagem de programação Python.' Revise o código criticamente e faça quaisquer alterações no código, se necessário. \n problema: {problem}
+
+  expected_output: >
+    Código bem formatado após a revisão
+
+  agent: coder_fullstack_agent

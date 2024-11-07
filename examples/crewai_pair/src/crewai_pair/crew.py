@@ -29,18 +29,137 @@ class CrewaiPairCrew:
         )
 
     @agent
-    def code_write(self) -> Agent:
+    def coder_python(self) -> Agent:
         return Agent(
-            config=self.agents_config["code_write"],
+            config=self.agents_config["coder_python"],
             # tools=[MyCustomTool()], # Example of custom tool, loaded on the beginning of file
             llm=self.llm,
             verbose=True,
         )
 
     @agent
-    def code_reviewer(self) -> Agent:
+    def coder_qa(self) -> Agent:
         return Agent(
-            config=self.agents_config["code_reviewer"], llm=self.llm, verbose=True
+            config=self.agents_config["coder_qa"],
+            # tools=[MyCustomTool()], # Example of custom tool, loaded on the beginning of file
+            llm=self.llm,
+            verbose=True,
+        )
+
+    @agent
+    def coder_debugger(self) -> Agent:
+        return Agent(
+            config=self.agents_config["coder_debugger"], llm=self.llm, verbose=True
+        )
+
+    @agent
+    def coder_tester(self) -> Agent:
+        return Agent(
+            config=self.agents_config["coder_tester"], llm=self.llm, verbose=True
+        )
+
+    @agent
+    def coder_optimizer(self) -> Agent:
+        return Agent(
+            config=self.agents_config["coder_optimizer"], llm=self.llm, verbose=True
+        )
+
+    @agent
+    def coder_scalability(self) -> Agent:
+        return Agent(
+            config=self.agents_config["coder_scalability"], llm=self.llm, verbose=True
+        )
+
+    @agent
+    def coder_doc(self) -> Agent:
+        return Agent(config=self.agents_config["coder_doc"], llm=self.llm, verbose=True)
+
+    @agent
+    def coder_reviewer(self) -> Agent:
+        return Agent(
+            config=self.agents_config["coder_reviewer"], llm=self.llm, verbose=True
+        )
+
+    @agent
+    def coder_devops(self) -> Agent:
+        return Agent(
+            config=self.agents_config["coder_devops"], llm=self.llm, verbose=True
+        )
+
+    @agent
+    def coder_frontend(self) -> Agent:
+        return Agent(
+            config=self.agents_config["coder_frontend"], llm=self.llm, verbose=True
+        )
+
+    @agent
+    def coder_backend(self) -> Agent:
+        return Agent(
+            config=self.agents_config["coder_backend"], llm=self.llm, verbose=True
+        )
+
+    @agent
+    def coder_data(self) -> Agent:
+        return Agent(
+            config=self.agents_config["coder_data"], llm=self.llm, verbose=True
+        )
+
+    @agent
+    def coder_mobile(self) -> Agent:
+        return Agent(
+            config=self.agents_config["coder_mobile"], llm=self.llm, verbose=True
+        )
+
+    @agent
+    def coder_cloud(self) -> Agent:
+        return Agent(
+            config=self.agents_config["coder_cloud"], llm=self.llm, verbose=True
+        )
+
+    @agent
+    def coder_security(self) -> Agent:
+        return Agent(
+            config=self.agents_config["coder_security"], llm=self.llm, verbose=True
+        )
+
+    @agent
+    def coder_ai(self) -> Agent:
+        return Agent(config=self.agents_config["coder_ai"], llm=self.llm, verbose=True)
+
+    @agent
+    def project_manager(self) -> Agent:
+        return Agent(
+            config=self.agents_config["project_manager"], llm=self.llm, verbose=True
+        )
+
+    @agent
+    def coder_manager(self) -> Agent:
+        return Agent(
+            config=self.agents_config["coder_manager"], llm=self.llm, verbose=True
+        )
+
+    @agent
+    def coder_analyst(self) -> Agent:
+        return Agent(
+            config=self.agents_config["coder_analyst"], llm=self.llm, verbose=True
+        )
+
+    @agent
+    def coder_architect(self) -> Agent:
+        return Agent(
+            config=self.agents_config["coder_architect"], llm=self.llm, verbose=True
+        )
+
+    @agent
+    def coder_team_lead(self) -> Agent:
+        return Agent(
+            config=self.agents_config["coder_team_lead"], llm=self.llm, verbose=True
+        )
+
+    @agent
+    def coder_fullstack(self) -> Agent:
+        return Agent(
+            config=self.agents_config["coder_fullstack"], llm=self.llm, verbose=True
         )
 
     @task
