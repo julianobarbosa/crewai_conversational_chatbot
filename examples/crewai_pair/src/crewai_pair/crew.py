@@ -183,6 +183,9 @@ class CrewaiPairCrew:
             tasks=self.tasks,  # Automatically created by the @task decorator
             process=Process.sequential,
             llm=self.llm,
+            manager_llm=self.llm,
+            manager_agent=self.agents["project_manager"],
+            memory=True,
             verbose=True,
             # process=Process.hierarchical, # In case you wanna use that instead https://docs.crewai.com/how-to/Hierarchical/
         )
